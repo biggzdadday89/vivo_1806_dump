@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+  <version>6</version>
+<list_name name="MCVSSupportApp">
+      <application name="com.netease.hyxd">
+              <values name="0">
+              </values>
+      </application>
+</list_name>
+<!--Add HandsetSpkMode online control -->
+<list_name name="HandsetSpk">
+</list_name>
+<!--
+2.Add BtSco connect control start
+-->
+<list_name name="BtScoConnectSupportApp">
+      <application name="com.tencent.mm">
+              <values name="0">
+              </values>
+      </application>
+	  <application name="com.tencent.mobileqq">
+              <values name="0">
+              </values>
+      </application>
+	  <application name="im.yixin">
+              <values name="0">
+              </values>
+      </application>
+</list_name>
+<!--Add BtSco connect control end-->
+<!--
+3.Add VIVO TYPE start
+-->
+<!--
+<list_name name="VIVOTYPESupportAppMAIN">
+      <application name="com.tencent.mm">
+      </application>
+	  <application name="com.tencent.mobileqq">
+      </application>
+</list_name>
+-->
+<list_name name="VIVOTYPESupportAppSUB">
+      <application name="/system/bin/smartshot">
+		<values name="0">
+		</values>
+      </application>
+	  <application name="com.changba">
+		<values name="0">
+		</values>
+      </application>
+	  <application name="com.tencent.karaoke">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.huajiao">
+		<values name="0">
+		</values>
+      </application>
+      <application name="cn.banshenggua.aichang">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.meelive.ingkee">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.happyteam.dubbingshow">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.xingguang.meme">
+		<values name="0">
+		</values>
+      </application>
+</list_name>
+<!--3.Add VIVO TYPE end-->
+<!--4.Add VIVO howling start-->
+<!--
+<list_name name="VIVOTYPEHowLing">
+      <application name="com.tencent.tmgp.pubgmhd">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.tencent.tmgp.sgame">
+		<values name="0">
+		</values>
+      </application>
+</list_name>
+-->
+<!--4.Add VIVO howling end-->
+<!--5.Add VIVO Special mic start-->
+<list_name name="VIVOTYPESupportAppSPE">
+      <application name="com.tencent.tmgp.pubgmhd">
+		<values name="0">
+		</values>
+      </application>
+      <application name="com.tencent.tmgp.sgame">
+		<values name="0">
+		</values>
+      </application>
+</list_name>
+<!--5.Add VIVO Special mic end-->
+  <!--<list_name name="DulaMicBlackApp">
+	  <application name="com.baidu.BaiduMap">
+              <values name="0">
+              </values>
+      </application>
+	  <application name="com.kwai.sogame">
+              <values name="0">
+              </values>
+      </application>
+	  <application name="com.tencent.radio">
+              <values name="0">
+              </values>
+      </application>
+  </list_name>-->
+</content>

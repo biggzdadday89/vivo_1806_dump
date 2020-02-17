@@ -1,0 +1,2 @@
+service hal_cameralog_default /system/bin/hw/vendor.vivo.hardware.camera.cameralog@1.0-service
+    class main

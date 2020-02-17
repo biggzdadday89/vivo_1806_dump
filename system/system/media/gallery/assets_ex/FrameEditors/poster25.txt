@@ -1,0 +1,12 @@
+SETIN
+<frametype>poster</frametype>
+<subtype>0</subtype>
+<basecolor>-1</basecolor>
+<baseboard>poster25.png</baseboard>
+PATHSETIN
+<pathnum>1</pathnum>
+<path>
+<point>(88,378)(1212,378)(1212,1630)(88,1630)</point>
+</path>
+PATHCLOSE
+CLOSE

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<wps>
+    <wp img_id="1000" type_id="1" file_path="/system/media/wallpaper/PD1813F_EX/Animal.jpg" title="" content="" provider="vivo" type="动物"/>
+    <wp img_id="1001" type_id="2" file_path="/system/media/wallpaper/PD1813F_EX/Art-1.jpg" title="" content="" provider="vivo" type="艺术"/>
+    <wp img_id="1002" type_id="3" file_path="/system/media/wallpaper/PD1813F_EX/Art-2.jpg" title="" content="" provider="vivo" type="艺术"/>
+    <wp img_id="1003" type_id="4" file_path="/system/media/wallpaper/PD1813F_EX/Car-1.jpg" title="" content="" provider="vivo" type="汽车"/>
+    <wp img_id="1004" type_id="5" file_path="/system/media/wallpaper/PD1813F_EX/Car-2.jpg" title="" content="" provider="vivo" type="汽车"/>
+    <wp img_id="1005" type_id="6" file_path="/system/media/wallpaper/PD1813F_EX/Fashion.jpg" title="" content="" provider="vivo" type="时尚"/>
+    <wp img_id="1006" type_id="7" file_path="/system/media/wallpaper/PD1813F_EX/Flowers-1.jpg" title="" content="" provider="vivo" type="生活"/>
+    <wp img_id="1007" type_id="8" file_path="/system/media/wallpaper/PD1813F_EX/Flowers-2.jpg" title="" content="" provider="vivo" type="生活"/>
+    <wp img_id="1008" type_id="9" file_path="/system/media/wallpaper/PD1813F_EX/Food-1.jpg" title="" content="" provider="vivo" type="美食"/>
+    <wp img_id="1009" type_id="10" file_path="/system/media/wallpaper/PD1813F_EX/Food-2.jpg" title="" content="" provider="vivo" type="美食"/>
+    <wp img_id="1010" type_id="11" file_path="/system/media/wallpaper/PD1813F_EX/Indoor.jpg" title="" content="" provider="vivo" type="生活"/>
+    <wp img_id="1011" type_id="12" file_path="/system/media/wallpaper/PD1813F_EX/Sports.jpg" title="" content="" provider="vivo" type="运动"/>
+    <wp img_id="1012" type_id="13" file_path="/system/media/wallpaper/PD1813F_EX/View-2.jpg" title="" content="" provider="vivo" type="旅行"/>
+    <wp img_id="1013" type_id="14" file_path="/system/media/wallpaper/PD1813F_EX/View-3.jpg" title="" content="" provider="vivo" type="旅行"/>
+    <wp img_id="1014" type_id="15" file_path="/system/media/wallpaper/PD1813F_EX/View-5.jpg" title="" content="" provider="vivo" type="旅行"/>
+    <wp img_id="1015" type_id="16" file_path="/system/media/wallpaper/PD1813F_EX/View-6.jpg" title="" content="" provider="vivo" type="旅行"/>
+</wps>
+

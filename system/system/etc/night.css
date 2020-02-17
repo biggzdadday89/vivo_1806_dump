@@ -1,0 +1,170 @@
+function openVivoNightMode() {
+  var html = document.querySelector("html");
+  var style = document.createElement("style");
+  var head = document.querySelector("head");
+  
+  var meituan = '';
+  var meituan_img = `
+    .img-cover {
+      background-color: transparent !important;
+    }
+  `;
+  var maoyan = '';
+  var maoyan_dots = `
+  	.dots {
+      background-color: transparent !important;
+    }
+    .dots span {
+    	background-color: #ccc !important;
+    }
+    .dots .active {
+    	background-color: #fff !important;
+    }
+  `;
+  if(window.location.host == "i.meituan.com") {
+    meituan = meituan_img;
+  };
+  if(window.location.host == "m.maoyan.com") {
+    maoyan = maoyan_dots;
+  };
+  if (!html.classList.contains("vivo-night-mode")) {
+    style.setAttribute("class", "vivo-black");
+    html.classList.add("vivo-night-mode");
+    var cssText = document.createTextNode(`
+      .*,*:before,*:after{
+        background-color:#0a0d13 !important;
+        color:#646974 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+        border-color:#252e39 !important;
+        -webkit-border-image:none !important;border-image:none !important;
+      }
+      body {
+        background-color:#0a0d13 !important;
+      }
+      html, body, div, p, h1, h2, h3, h4, h5, h6, span, button, header, footer, section, article, a, aside, caption, img, input, ul, li, option, select, table, tbody, td, th, tfoot, th, thead{
+        background-color:#0a0d13 !important;
+        color: #646974 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+        border-color:#252e39 !important;
+        -webkit-border-image:none !important;border-image:none !important;
+      }
+      div:after, div:before, p:after, p:before, h1:after, h1:before, h2:after, h2:before,h3:after, h3:before ,h4:after, h4:before, h5:after, h5:before, h6:after, h6:before,
+      span:after, span:before,button:after, input:before,input:after{
+        background-color:#0a0d13 !important;
+        color: #646974 !important;
+        border-color:#252e39 !important;
+        -webkit-border-image:none !important;border-image:none !important;
+      }
+      ${meituan}
+      ${maoyan}
+      a,a *{
+        color:#3c5d85 !important;
+        text-decoration:none !important;
+        -webkit-tap-highlight-color: rgba(63,93,133,.75) !important;
+      }
+      a:hover,a:hover *{
+        color:#3f6c9b !important;
+        background:#1B1E23 !important;
+      }
+      a:visited,a:visited *,a:active,a:active *{
+        color:#5c3668 !important;
+      }
+      select,option,button,textarea{
+        color:#7A7A7A !important;
+        background:#1a1d28 !important;
+        border:1px solid;
+        border-color:#252e39 #252e39 #252e39 #252e39 !important;
+      }
+      select:hover,option:hover,button:hover,textarea:hover,select:focus,option:focus,button:focus,textarea:focus{
+        color:#777777 !important;
+        background:#1a1d28 !important;
+        border-color:#252e39 #252e39 #252e39 #252e39 !important;
+      }
+      input,input[type=text],input[type=search],input[type=password]{
+        border-color:#1a1c27 !important;
+        border-style:1px solid;
+        box-shadow:1px 0 4px rgba(16,18,23,.75) inset,0 1px 4px rgba(16,18,23,.75) inset !important;
+        background-color:#0a0d13 !important;
+        color:#61615f !important;
+      }
+      input:focus,input[type=text]:focus,input[type=search]:focus,input[type=password]:focus,input[type=tel]:focus,input[type=email]:focus{
+        border-color:#0B325C !important;
+        outline:none !important;
+        color:#777777 !important;
+        background:#0a0d13 !important;
+      }
+      input:hover,select:hover,option:hover,button:hover,textarea:hover,input:focus,select:focus,option:focus,button:focus,textarea:focus{
+        color:#777777 !important;
+        background:#5A5A5A !important;
+        border-color:#252e39 #252e39 #252e39 #252e39 !important;
+      }
+      input[type=button],input[type=submit],input[type=reset],input[type=image]{
+        color:#61615f !important;
+        border-color:#888888 #666666 #666666 #888888 !important;
+      }
+      input[type=button],input[type=submit],input[type=reset]{
+        background-color: #181a23!important;
+        border-color:#262939 !important;
+      }
+      input[type=button]:hover,input[type=submit]:hover,input[type=reset]:hover,input[type=image]:hover{
+        border-color:#252e39 #252e39 #252e39 #252e39 !important;
+      }
+      input[type=button]:hover,input[type=submit]:hover,input[type=reset]:hover{
+        background-color: #262939!important;
+        border:1px solid #666666 !important;
+      }
+      img{
+        border-color:#111111 !important;
+      }
+      ::-webkit-input-placeholder{
+        color:#61615f !important;
+      }
+
+      ::-webkit-scrollbar-thumb{
+          background-color:#666666 !important;
+      }
+      ::-webkit-scrollbar-track-piece{
+          background-color:#2a2d33 !important;
+      }
+      hr{
+          border-color:#252e39 !important;
+      }
+
+      video, iframe, canvas, svg,amp-social-share,
+      embed[type='application/x-shockwave-flash'],
+      object[type='application/x-shockwave-flash'],
+      *[style*='url('] {
+          -webkit-filter : opacity(50%);
+          -ms-filter     : opacity(50%);
+          filter         : opacity(50%);
+      }
+
+      input[type=text],input[type=password] {
+        background-image: none;
+      }
+      .input-box{
+        border:1px solid;
+        border-color:#252e39 #252e39 #252e39 #252e39 !important;
+      }
+    `);
+    style.appendChild(cssText);
+    head.appendChild(style);
+  } else {
+    return;
+  }
+}
+
+function closeVivoNightMode() {
+  var html = document.querySelector("html");
+  var blackStyle;
+  if (!!document.querySelector(".vivo-black")) {
+    blackStyle = document.querySelector(".vivo-black");
+  }
+  var head = document.querySelector("head");
+  html.classList.remove("vivo-night-mode");
+  if (blackStyle != null) {
+    head.removeChild(blackStyle);
+  }
+}
