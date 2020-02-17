@@ -1,0 +1,23 @@
+on property:vendor.fingerprint.boot=fpc_1229
+    chown system system /sys/bus/spi/devices/spi32766.0/wakeup_enable
+    chown system system /sys/bus/spi/devices/spi32766.0/irq
+    chown system system /sys/bus/spi/devices/spi32766.0/do_wakeup
+    chown system system /sys/bus/spi/devices/spi32766.0/hw_reset
+    chown system system /sys/bus/spi/devices/spi32766.0/clk_enable
+    chown system system /sys/bus/spi/devices/spi32766.0/perf_lock
+    chown system system /sys/bus/spi/devices/spi32766.0/keep_awake
+    chown system system /sys/bus/spi/devices/spi32766.0/regulator_enable
+    enable biometrics-fingerprint-fpc1229
+
+service biometrics-fingerprint-fpc1229 /vendor/bin/hw/vendor.vivo.hardware.biometrics.fingerprint@2.1-service-fpc1229
+    class late_start
+    user system
+    onrestart restart fpc1229-restart-counter-sh
+    group system input sdcard_rw
+    disabled
+
+service fpc1229-restart-counter-sh /system/vendor/bin/sh /vendor/bin/init.vivo.fingerprint_restart_counter.sh biometrics-fingerprint-fpc1229 5
+    user system
+    group system
+    disabled
+    oneshot
