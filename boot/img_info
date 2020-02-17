@@ -1,0 +1,14 @@
+kernel=kernel
+ramdisk=ramdisk
+dt=dt.img
+page_size=2048
+kernel_size=10358686
+ramdisk_size=28798399
+dtb_size=1
+base_addr=0x40078000
+kernel_offset=0x00008000
+ramdisk_offset=0x14f88000
+tags_offset=0x13f88000
+cmd_line='bootopt=64S3,32N2,64N2 product.version=PD1813F_EX_A_6.13.8 fingerprint.abbr=9/PPR1.180610.011 buildvariant=user veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f'
+board=""
+format=gzip
